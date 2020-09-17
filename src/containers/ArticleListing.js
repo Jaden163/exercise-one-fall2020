@@ -10,7 +10,6 @@ function ArticleListing() {
       <header>
         <h1>Articles</h1>
       </header>
-
       {Data.map((article, i) => (
         <ArticleCard key={i} articleData={article} /> // unique key for each article component
       ))}

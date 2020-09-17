@@ -1,9 +1,20 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
+// passed down from another component (ArticleListing)
 function ArticleCard({ articleData }) {
   return (
-    <div>
-      <h2>{articleData.title}</h2>
+    <div className="ArticleCard">
+      <div className="ArticleCardImage">
+        <img src={articleData.image.url} alt={articleData.image.alt}></img>
+      </div>
+      <div className="ArticleText">
+        <h2>{articleData.title}</h2>
+        <p>{articleData.publishedDate}</p>
+        <p>{articleData.blurb}</p>
+        <Link to={`/article/${articleData.id}`}> Read More </Link>
+      </div>
     </div>
   );
 }
