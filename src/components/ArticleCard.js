@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import returnDate from "../containers/dateValues";
+
 // passed down from another component (ArticleListing)
 function ArticleCard({ articleData }) {
   return (
@@ -11,7 +13,7 @@ function ArticleCard({ articleData }) {
       </div>
       <div className="ArticleText">
         <h2>{articleData.title}</h2>
-        <p>{articleData.publishedDate}</p>
+        <p>{returnDate({ articleData })}</p>
         <p>{articleData.blurb}</p>
         <Link to={`/article/${articleData.id}`}> Read More </Link>
       </div>

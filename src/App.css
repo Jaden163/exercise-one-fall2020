@@ -1,6 +1,7 @@
-.App {
+.ArticleListing {
   margin: 0 auto;
   max-width: 1080px;
+  padding: 0 20px;
 }
 
 .App h1 {
@@ -27,4 +28,36 @@
 .ArticleCardText {
   flex-basis: 70%;
 }
+
+.Article {
+}
+
+.ArticleHeaderWrapper {
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+  padding-top: 65px;
+}
+
+.ArticleHeader {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.ArticleHeader h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.ArticleHeaderBlurb {
+  font-size: 20px;
+}
+
+.ArticleBody {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 /* Dont use ID for CSS */
